@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CivicReport</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="logo"><img src="location-map-2956.svg" alt="" height="35"> CivicReport</div>
+      <nav>
+        <ul>
+          <li><a class="navlink" href="index.html" class="active">Home</a></li>
+          <li><a class="navlink" href="report.html">Report Issue</a></li>
+          <li><a class="navlink" href="dashboard.html">Dashboard</a></li>
+          <li><a class="navlink" href="contact.html">Contact</a></li>
+          <li><a class="navlink" href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay">
+      <div class="hero-content">
+        <h1 style="font-size: 50px;">Report Civic Issues. <br>Build a Cleaner City.</h1>
+        <p style="color: rgb(248, 220, 220);">
+          Join your community in making a difference. Report issues, track progress,
+          and help create the city you want to live in.
+        </p>
+        <div class="buttons">
+          <a href="report.html" class="btn primary">📄 Report an Issue</a>
+          <a href="dashboard.html" class="btn secondary">📊 View Dashboard</a>
+        </div>
+        <div class="stats">
+          <div><strong>250+</strong><br />Issues Reported</div>
+          <div><strong>180+</strong><br />Issues Resolved</div>
+          <div><strong>1,200+</strong><br />Community Members</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="secondary">
+    <div class="container">
+      <h1>Issues in Your Community</h1>
+      <div class="box">
+
+        <h1>Interactive Issue Map</h1>
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28850.293651608332!2d85.40774861429443!3d25.328158549254944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29191e59bf919%3A0xa0f1313bf194a0bd!2sNalanda%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1757775232735!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="secondary">
+    <main class="Container">
+      <h2>Recent Community Issues</h2>
+      <div class="filters">
+        <button>Filters</button>
+        <div class="sort">
+          Sort by:
+          <button class="active">Newest</button>
+          <button>Popular</button>
+        </div>
+      </div>
+
+      <div class="cards">
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="tag sanitation">Sanitation</div>
+          <div class="status pending">Pending</div>
+          <p>Overflowing trash bin that hasn't been emptied in several days,…</p>
+          <div class="meta">
+            <span>📍 Broadway & 42nd St</span>
+            <span>🕒 about 3 hours ago</span>
+          </div>
+          <div class="likes">👍 6</div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <div class="tag utilities">Utilities</div>
+          <div class="status in-progress">In Progress</div>
+          <p>Water main leak causing flooding on residential street.</p>
+          <div class="meta">
+            <span>📍 Elm Street</span>
+            <span>🕒 about 6 hours ago</span>
+          </div>
+          <div class="assigned">Assigned to: Water Department</div>
+          <div class="likes">👍 23</div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <div class="tag lighting">Street Lighting</div>
+          <div class="status in-progress">In Progress</div>
+          <p>Broken streetlight causing safety concerns for pedestrians during…</p>
+          <div class="meta">
+            <span>📍 Pine Street</span>
+            <span>🕒 1 day ago</span>
+          </div>
+          <div class="assigned">Assigned to: Public Works</div>
+          <div class="likes">👍 8</div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+          <div class="tag road">Road Maintenance</div>
+          <div class="status pending">Pending</div>
+          <p>Large pothole on Main Street causing damage to vehicles and…</p>
+          <div class="meta">
+            <span>📍 Main Street & Oak</span>
+            <span>🕒 2 days ago</span>
+          </div>
+          <div class="likes">👍 12</div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+          <div class="tag parks">Parks & Recreation</div>
+          <div class="status resolved">Resolved</div>
+          <p>Playground equipment needs repair - swing set chains are rusted and…</p>
+          <div class="meta">
+            <span>📍 Central Park</span>
+            <span>🕒 5 days ago</span>
+          </div>
+          <div class="likes">👍 15</div>
+        </div>
+      </div>
+    </main>
+  </section>
+
+  <section class="how-it-works">
+    <div class="how-container">
+      <h2>How It Works</h2>
+      <p class="subtitle">Our simple three-step process makes it easy to report issues and track their resolution</p>
+
+      <div class="steps">
+        <!-- Step 1 -->
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-icon">📄</div>
+          <h3>Report</h3>
+          <p>Submit a detailed report about the civic issue you've encountered in your community.</p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-icon">👥</div>
+          <h3>Assigned</h3>
+          <p>Your report is reviewed and assigned to the appropriate city department or authority.</p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-icon">✔️</div>
+          <h3>Resolved</h3>
+          <p>Track progress as the issue is worked on and ultimately resolved by city workers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <!-- Column 1: Brand Info -->
+      <div class="footer-col">
+        <h3>📍 CivicReport</h3>
+        <p>
+          Empowering communities to report and resolve civic issues together.
+          Building cleaner, safer cities one report at a time.
+        </p>
+        <div class="social-icons">
+          <a href="#">🌐</a>
+          <a href="#">🐦</a>
+          <a href="#">📸</a>
+        </div>
+      </div>
+
+      <!-- Column 2: Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="report.html">Report Issue</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          
+        </ul>
+      </div>
+
+      <!-- Column 3: Contact Info -->
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <ul>
+          <li>📧 support@civicreport.com</li>
+          <li>📞 (555) 123-4567</li>
+          <li>📍 123 Civic Center Drive<br>City Hall, CA 90210</li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Support Links -->
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Community Guidelines</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p id="Allright">© 2024 CivicReport. All rights reserved.</p>
+      <p id="heart">Made with ❤️ for better communities</p>
+    </div>
+  </footer>
+
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
