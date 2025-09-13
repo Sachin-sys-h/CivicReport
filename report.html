@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CivicReport</title>
+  <link rel="stylesheet" href="report.css">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+</head>
+
+<body>
+
+
+  <!-- Navbar -->
+ <header>
+    <div class="navbar">
+      <div class="logo"><img src="location-map-2956.svg" alt="" height="35"> CivicReport</div>
+      <nav>
+        <ul>
+          <li><a class="navlink"  href="index.html" class="active">Home</a></li>
+          <li><a class="navlink" href="report.html">Report Issue</a></li>
+          <li><a class="navlink" href="dashboard.html">Dashboard</a></li>
+          <li><a class="navlink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Header -->
+  <div class="hero">
+    <h1>Report a Civic Issue</h1>
+    <p>Help improve your community by reporting issues that need attention from city services.</p>
+  </div>
+  <div class="main_content">
+    <!-- Main Content -->
+
+    <!-- Report Form -->
+    <div class="report-box">
+      <h2>📷 Report a Civic Issue</h2>
+      <label for="category">Issue Category</label>
+      <select id="category">
+        <option>Select the type of issue</option>
+        <option>Road Damage</option>
+        <option>Street Light Outage</option>
+        <option>Garbage Collection</option>
+        <option>Water Supply</option>
+        <option>Other</option>
+      </select>
+
+      <label for="description">Description</label>
+      <textarea id="description" placeholder="Please provide a detailed description of the issue..."></textarea>
+
+      <label for="loc">Location</label>
+      <input type="text" id="loc" placeholder="Enter specific address or intersection"> <br>
+      <label for="img">Photo(Optional)</label>
+
+      <input type="file" id="img" accept="image/*" placeholder="choose image">
+
+      <button class="submit-btn">Submit Report</button>
+    </div>
+    <div class="main_content_2">
+      <!-- Reporting Tips -->
+      <div class="tips-box">
+        <h2>📝 Reporting Tips</h2>
+        <ul style="color: rgb(100, 99, 99);">
+          <li><strong style="color: black;"> Be Specific:</strong> Provide detailed descriptions including exact locations and times when
+            possible.</li>
+          <li><strong style="color: black;">Include Photos:</strong> Photos help authorities understand the severity and nature of the issue.
+          </li>
+          <li><strong style="color: black;">Safety First:</strong> Do not put yourself at risk while reporting an issue.</li>
+        </ul>
+      </div>
+      <div id="emergency">
+        <h2 class="emergency_heading">Emergency?</h2>
+        <ul style="color: rgb(100, 99, 99);">
+          <li>For immediate emergencies, please contract:</strong></li>
+          <li>Emergency:911</li>
+          <li>Non-Emergency:(555) 311</li>
+          <li>Water Emergency:(555) 123-Water</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer">
+    <div class="civicreport">
+      <h2>Civic Report </h2>
+      <p id="padd" style="color: rgb(100, 99, 99);">Empowering communities to report and
+        resolve civic issuses together. Building cleaner, safer
+        cities one report at a time</p>
+
+    </div>
+
+    <div class="quicklinks">
+      <h2>Quick Links </h2>
+      <div id="pad"style="color: rgb(100, 99, 99);">Home</div>
+      <div id="pad"style="color: rgb(100, 99, 99);">Report Issue</div>
+      <div id="pad"style="color: rgb(100, 99, 99);">Dashboard</div>
+      <div id="pad"style="color: rgb(100, 99, 99);">Contact</div>
+
+    </div>
+    <div class="contactus">
+      <h2>Contact Us </h2>
+      <div id="padd" style="color: rgb(100, 99, 99);">Support@civicreport.com</div>
+      <div id="padd" style="color: rgb(100, 99, 99);">(555) 123-4567</div>
+      <div id="padd" style="color: rgb(100, 99, 99);">123 Civic Center Drive City Hall , CA 90210</div>
+
+    </div>
+    <div class="support">
+      <h2>Support </h2>
+      <div id="padd" style="color: rgb(100, 99, 99);">Help Center</div>
+      <div id="padd" style="color: rgb(100, 99, 99);">Privacy Policy</div>
+      <div id="padd" style="color: rgb(100, 99, 99);">Terms of Service</div>
+      <div id="padd" style="color
