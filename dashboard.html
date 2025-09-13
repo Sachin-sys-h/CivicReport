@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>City Admin Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <header>
+    <div class="navbar">
+      <div class="logo"><img src="location-map-2956.svg" alt="" height="35"> CivicReport</div>
+      <nav>
+        <ul>
+          <li><a class="navlink" href="index.html" class="active">Home</a></li>
+          <li><a class="navlink" href="report.html">Report Issue</a></li>
+          <li><a class="navlink" href="dashboard.html">Dashboard</a></li>
+          <li><a class="navlink" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <div class="dashboard-header">
+    <h1>City Administration Dashboard</h1>
+    <p>Monitor and manage all reported civic issues across the community.</p>
+  </div>
+
+  <!-- Summary Info -->
+  <section class="summary-section">
+    <div class="summary-top">
+      <h2>Admin Dashboard</h2>
+      <span class="timestamp">Last updated: less than a minute ago • Auto-refresh enabled</span>
+    </div>
+
+    <div class="summary-cards">
+      <div class="card">
+        <h3>Total Issues</h3>
+        <p class="value">6</p>
+      </div>
+      <div class="card pending">
+        <h3>Pending</h3>
+        <p class="value">3</p>
+      </div>
+      <div class="card progress">
+        <h3>In Progress</h3>
+        <p class="value">2</p>
+      </div>
+      <div class="card resolved">
+        <h3>Resolved</h3>
+        <p class="value">1</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="map-section">
+    <h2>Issues Map Overview</h2>
+    <div class="map-placeholder">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28850.293651608332!2d85.40774861429443!3d25.328158549254944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29191e59bf919%3A0xa0f1313bf194a0bd!2sNalanda%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1757776048424!5m2!1sen!2sin"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+
+
+
+    </div>
+  </section>
+
+
+  <section class="issue-table-section">
+    <h2>All Issues</h2>
+    <table class="issue-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Description</th>
+          <th>Location</th>
+          <th>Status</th>
+          <th>Upvotes</th>
+          <th>Assigned To</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Road Maintenance</td>
+          <td>Large pothole on Main Street causing damage...</td>
+          <td>Main Street & Oak Avenue</td>
+          <td><span class="badge pending">pending</span></td>
+          <td>12</td>
+          <td>City Works</td>
+          <td><button class="status-btn">Pending</button></td>
+        </tr>
+        <tr>
+          <td>Street Lighting</td>
+          <td>Broken streetlight causing safety concerns for pedestrians...</td>
+          <td>Pine Street</td>
+          <td><span class="badge in-progress">in progress</span></td>
+          <td>8</td>
+          <td>Public Works</td>
+          <td><button class="status-btn">In Progress</button></td>
+        </tr>
+        <tr>
+          <td>Parks & Recreation</td>
+          <td>Playground equipment needs repair - swing chains are rusted...</td>
+          <td>Central Park Playground</td>
+          <td><span class="badge resolved">resolved</span></td>
+          <td>15</td>
+          <td>Parks Dept</td>
+          <td><button class="status-btn">Resolved</button></td>
+        </tr>
+        <tr>
+          <td>Sanitation</td>
+          <td>Overflowing trash bin that hasn't been emptied in several days...</td>
+          <td>Broadway & 42nd St</td>
+          <td><span class="badge pending">pending</span></td>
+          <td>6</td>
+          <td>Sanitation</td>
+          <td><button class="status-btn">Pending</button></td>
+        </tr>
+        <tr>
+          <td>Utilities</td>
+          <td>Water main leak causing flooding on residential street...</td>
+          <td>Elm Street</td>
+          <td><span class="badge in-progress">in progress</span></td>
+          <td>23</td>
+          <td>Water Dept</td>
+          <td><button class="status-btn">In Progress</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h4 class="footer-title">CivicReport</h4>
+        <p>Empowering communities to report and resolve civic issues together. Building cleaner, safer cities one report
+          at a time.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">Quick Links</h4>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Report Issue</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">Contact Us</h4>
+        <p><i class="fas fa-envelope"></i> support@civicreport.com</p>
+        <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+        <p><i class="fas fa-map-marker-alt"></i> 123 Civic Center Drive<br>City Hall, CA 90210</p>
+      </div>
+
+      <div class="footer-section">
+        <h4 class="footer-title">Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Community Guidelines</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom" style="display: flex; justify-content: space-between;">
+      <p>© 2024 CivicReport. All rights reserved.</p>
+      <p>Made with ❤️ for better communities</p>
+    </div>
+  </footer>
+
+
+
+</body>
+
+</html>
